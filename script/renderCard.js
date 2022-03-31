@@ -20,7 +20,10 @@ const renderCard = (data) => {
     const img = document.createElement('img');
     img.className = 'other-films__img';
     img.alt = `Постер "${item.title || item.name}"`;
-    img.src = `https://www.themoviedb.org/t/p/w600_and_h900_bestv2${item.poster_path}`;
+
+    img.src = item.poster_path ? 
+    `https://www.themoviedb.org/t/p/w600_and_h900_bestv2${item.poster_path}`: 
+    './img/no-poster.jpg';
 
     link.append(img);
     card.append(link);

@@ -30,3 +30,10 @@ export const getVideo = async (id, type) => {
   const url = `${BASE_URL}${type}/${id}/videos?api_key=${API_KEY}${LANGUAGE}`;
   return await getData(url);
 }
+
+export const search = async (query, page) => {
+  const url = 
+  `${BASE_URL}search/multi?api_key=${API_KEY}${LANGUAGE}&query=${query}&page=${page}&include_adult=false`;
+  return await getData(url);
+}
+
