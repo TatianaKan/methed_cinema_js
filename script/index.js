@@ -1,7 +1,8 @@
 import slideMenu from "./menu.js";
 import renderVideo from "./renderVideo.js";
-import menuLink from "./menuLink.js"
-import search from "./search.js"
+import menuLink from "./menuLink.js";
+import search from "./search.js";
+import '../videotube/videotube.min.js';
 
 slideMenu({
   openBtn: '.header__burger-btn',
